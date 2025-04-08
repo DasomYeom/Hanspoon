@@ -1,0 +1,166 @@
+body {
+    margin: 0;
+    font-family: 'Sanita', sans-serif;
+    background-color: #EEEBE1;
+    color: #131810;
+  }
+  
+  .container {
+    display: flex;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .main-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #EEEBE1;
+    position: relative;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  
+  .main-header h1 {
+    font-family: 'Sanita', sans-serif;
+    font-size: 36px;
+    font-weight: 600;
+    color: #131810;
+    position: relative;
+    margin: 0;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .hero {
+    position: relative;
+    text-align: left;
+    padding: 20px;
+    width: 100%;
+    height: 500px;
+    background-color: #f2f2f2;
+  }
+  
+  .hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+  }
+  
+  .hero-text {
+    position: absolute;
+    top: 30px;
+    left: 60px;
+    color: white;
+    max-width: 500px;
+  }
+  
+  .hero-text h2 {
+    font-size: 29px;
+    font-weight: bold;
+  }
+  
+  .hero-text p {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  .recipe-details {
+    margin-top: 20px;
+  }
+  
+  .recipe-details h3 {
+    font-size: 22px;
+    font-weight: bold;
+  }
+  
+  .recipe-details ul, .recipe-details ol {
+    margin-left: 20px;
+  }
+  
+  .share-btn {
+    background-color: #314028;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-top: 20px;
+    cursor: pointer;
+  }
+  
+  .sidebar {
+    background-color: #314028;
+    color: white;
+    width: 200px;
+    padding: 20px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+  }
+  
+  .sidebar.show {
+    transform: translateX(0);
+  }
+  
+  .sidebar ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .sidebar li {
+    margin: 10px 0;
+  }
+  
+  .sidebar a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+  }
+  
+  .sidebar-thumb {
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    margin-right: 10px;
+  }
+  
+  .menu-btn {
+    position: absolute;
+    left: 20px;
+    background: none;
+    border: none;
+    font-size: 20px;
+    color: #131810;
+    cursor: pointer;
+  }
+  
+  @media (max-width: 768px) {
+    .hero {
+      height: 300px;
+    }
+  
+    .hero img {
+      height: 100%;
+    }
+  
+    .sidebar {
+      position: absolute;
+      width: 100%;
+      height: 100vh;
+      background-color: #314028;
+    }
+  
+    .sidebar.show {
+      transform: translateX(0);
+    }
+  }
+  

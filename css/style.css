@@ -1,0 +1,323 @@
+/* ===== Sanita ===== */
+@font-face {
+  font-family: 'Sanita';
+  src: url('../font/fonts/Sansita-Regular.ttf') format('truetype');
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'Sanita';
+  src: url('../font/fonts/Sansita-Bold.ttf') format('truetype');
+  font-weight: 700;
+}
+@font-face {
+  font-family: 'Sanita';
+  src: url('../font/fonts/Sansita-ExtraBold.ttf') format('truetype');
+  font-weight: 800;
+}
+@font-face {
+  font-family: 'Sanita';
+  src: url('../font/fonts/Sansita-Italic.ttf') format('truetype');
+  font-weight: 400;
+  font-style: italic;
+}
+
+/* ===== Anek Gurmukhi ===== */
+@font-face {
+  font-family: 'Anek Gurmukhi';
+  src: url('../font/fonts/AnekGurmukhi-Regular.ttf') format('truetype');
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'Anek Gurmukhi';
+  src: url('../font/fonts/AnekGurmukhi-Bold.ttf') format('truetype');
+  font-weight: 700;
+}
+@font-face {
+  font-family: 'Anek Gurmukhi';
+  src: url('../font/fonts/AnekGurmukhi-ExtraBold.ttf') format('truetype');
+  font-weight: 800;
+}
+
+/* 기본 스타일 */
+body {
+  margin: 0;
+  font-family: 'Sanita', sans-serif;
+  background-color: #EEEBE1;
+  color: #131810;
+}
+
+.container {
+  display: flex;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.sidebar {
+  background-color: #314028;
+  color: white;
+  width: 100px;
+  padding: 20px;
+  flex-shrink: 0;
+}
+
+.sidebar h3 {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.sidebar a {
+  color: white;  /* 링크 색상은 흰색으로 설정 */
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.sidebar-thumb {
+  width: 100%;
+  max-width: 40px;
+  height: auto;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.all-reviews {
+  font-size: 13px;
+  color: white;
+  text-decoration: none;
+}
+
+/* 헤더 수정 */
+.main-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: #EEEBE1;
+  position: relative;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.main-header h1 {
+  font-family: 'Sanita', sans-serif;
+  font-size: 36px;
+  font-weight: 600;
+  color: #131810;
+  position: relative;
+  margin: 0;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.header-buttons {
+  position: absolute;
+  right: 20px;
+  display: flex;
+  gap: 10px;
+}
+
+.menu-btn {
+  position: absolute;
+  left: 20px;
+  background: none;
+  border: none;
+  font-size: 20px;
+  color: #131810;
+}
+
+.hero {
+  position: relative;
+  text-align: left;
+  padding: 20px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.hero img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.hero-text {
+  position: absolute;
+  top: 30px;
+  left: 60px;
+  color: white;
+  max-width: 500px;
+}
+
+.hero-text h2 {
+  font-size: 29px;
+  font-weight: bold;
+  margin-bottom: -20px;
+}
+
+.hero-text p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.recipe-btn {
+  position: absolute;
+  bottom: 40px;
+  right: 60px;
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: #F5F4F1;
+  color: #314028;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: bold;
+  text-decoration: none;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.categories {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  padding: 40px 20px;
+  background-color: #EEEBE1;
+  max-width: 1200px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.category {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+}
+
+.category p {
+  margin-bottom: 6px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.category img {
+  width: 100%;
+  max-width: 150px;
+  height: auto;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* 반응형 */
+@media (max-width: 768px) {
+  .sidebar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 100vh;
+    background-color: #314028;
+    transform: translateX(-120%);
+    transition: transform 0.3s ease;
+    z-index: 1000;
+  }
+
+  .sidebar.show {
+    transform: translateX(0);
+  }
+
+  .sidebar.hidden {
+    transform: translateX(-120%);
+  }
+
+  /* 햄버거 버튼 위치 조정 */
+  .menu-btn {
+    left: 10px;
+  }
+
+  .header-buttons {
+    right: 10px;
+  }
+
+  .main-header {
+    padding: 20px;
+  }
+
+  .main-header h1 {
+    font-size: 28px;
+  }
+
+  .hero-text {
+    left: 20px;
+    top: 20px;
+    max-width: 90%;
+  }
+
+  .recipe-btn {
+    right: 20px;
+    bottom: 20px;
+    font-size: 13px;
+    padding: 8px 16px;
+  }
+
+  /* 카테고리 2열 (그리드) */
+  .categories {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    justify-items: center;
+    padding: 40px 20px;
+    background-color: #EEEBE1;
+  }
+
+  .category {
+    margin: 10px 0;
+  }
+}
+
+/* 카테고리 1열 배치 시 */
+@media (min-width: 769px) {
+  .categories {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+
+  .category {
+    margin: 20px;
+  }
+}
+
+.hero .recipe-btn,
+.category a {
+  color: inherit;  /* 링크의 기본 색상 삭제 */
+  text-decoration: none;  /* 밑줄 없애기 */
+}
+
+.main-header a {
+  color: inherit;  
+  text-decoration: none;  
+}
